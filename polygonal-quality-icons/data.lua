@@ -11,10 +11,26 @@ local outline_styles = {
 	"numbers-white-outline"
 }
 
+local quality_levels = {
+	"normal",
+	"uncommon",
+	"rare",
+	"epic",
+	"legendary",
+	"any",
+	-- Mythic Quality [VextexFux]
+	"mythic",
+	-- Quality++ [Puzz1ebox]
+	"mythical",
+	"masterwork",
+	"wonderous",
+	"artifactual"
+}
+
 function create_virtual_signals()
 	local signals = {}
 	for _, style in ipairs(outline_styles) do
-		for _, quality in ipairs { "normal", "uncommon", "rare", "epic", "legendary", "any" } do
+		for _, quality in ipairs(quality_levels) do
 			table.insert(signals, {
 				type = "virtual-signal",
 				name = "polygonal-quality-icons-" .. quality .. "-" .. style,
