@@ -23,7 +23,7 @@ local quality_levels = {
 	-- Quality++ [Puzz1ebox]
 	"mythical",
 	"masterwork",
-	"wonderous",
+	"wondrous",
 	"artifactual"
 }
 
